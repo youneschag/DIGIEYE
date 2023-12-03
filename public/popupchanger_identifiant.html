@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/popup.css">
+  <title>Changer d'identifiant</title>
+</head>
+<body>
+    <a href="javascript:'conffermer();'"></a>
+    <form id="changeIdForm">
+      <input type="text" name="currentUsername" id="currentUsernameField" placeholder="Identifiant actuel">
+      <input type="text" name="newUsername" id="newUsernameField" placeholder="Nouvel identifiant">
+      <input type="submit" value="Confirmer" id="identifiant-form-confirm" onclick="conffermer()">
+    </form>
+  <script src="../src/popup.js"></script>
+  <script type="text/javascript" lang="javascript">
+
+    function conffermer() {
+        window.close();
+    }
+  </script>
+</body>
+</html>

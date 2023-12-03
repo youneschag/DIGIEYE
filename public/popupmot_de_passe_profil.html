@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/popup.css">
+  <title>Changer de mot de passe</title>
+</head>
+<body>
+    <a href="javascript:'proffermer();'"></a>
+    <form id="changePasswordProfileForm">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Votre mot de passe" value="None">
+        <input type="password" name="confirm-password" id="confirm-password-field" class="login-form-field" placeholder="Confirmez votre mot de passe">
+      <input type="submit" value="Confirmer" id="identifiant-form-submit" onclick="proffermer();">
+    </form>
+  </div>
+  <script src="../src/popup.js"></script>
+ <script type="text/javascript" lang="javascript">
+
+    function proffermer() {
+        window.close();
+    }
+  </script>
+</body>
+</html>

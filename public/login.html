@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+    <link rel="stylesheet" href="../src/login.css">
+  </head>
+  <body>
+    <div class="ribbon-top"></div> <!-- Ruban en haut -->
+    <main id="main-holder">
+      <h1 id="login-header">Mon compte!</h1>
+      
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">Identifiant : <span id="error-msg-second-line">Mot de passe : </span></p>
+      </div>
+      
+      <form id="login-form">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Votre identifiant">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Votre mot de passe" value="None">
+        <input type="submit" value="Login" id="login-form-submit">
+        <a href="#" id="forgot-password-link">Mot de passe oublié ?</a>
+      </form>
+      <div id="error-message" class="error-message"></div>
+      <button id="return-button">Retour</button>
+    </main>
+    <div class="ribbon-bottom"></div> <!-- Ruban en bas -->
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const loginButton = document.getElementById("login-form-submit");
+        const loginErrorMsg = document.getElementById("login-error-msg");
+        const errorMessage = document.getElementById("error-message");
+        const returnButton = document.getElementById("return-button");
+        const forgotPasswordLink = document.getElementById("forgot-password-link");
+        
+        loginButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          const username = loginForm.username.value;
+          const password = process.env.PASSWORD;
+        
+           if (username === "younes" && password === `${password}`) {
+            const popupWindow = window.open('../src/popup.html', 'CustomPopup', 'width=400,height=300,resizable,scrollbars');
+        
+            popupWindow.addEventListener('DOMContentLoaded', () => {
+              const okButton = popupWindow.document.getElementById('ok-button');
+              okButton.addEventListener('click', () => {
+                popupWindow.close();
+                window.location.href = "index.html";
+              });
+            });
+          } else {
+            loginErrorMsg.style.opacity = 0;
+            errorMessage.textContent = "Identifiant ou mot de passe incorrect. Veuillez réessayer.";
+            errorMessage.style.display = "block";
+          }
+        });
+        
+        returnButton.addEventListener("click", () => {
+            window.location.href = "account.html";
+        });
+        
+        forgotPasswordLink.addEventListener("click", (e) => {
+          e.preventDefault();
+  
+          const popupWindow = window.open("identifiant.html", "CustomPopup", "width=400,height=300,resizable,scrollbars");
+        });
+
+        // Remplir automatiquement le champ de saisie du mot de passe avec le mot de passe du système
+        const passwordField = document.getElementById("password-field");
+        passwordField.value = process.env.PASSWORD;
+    </script>
+  </body>
+</html>
+
+
+

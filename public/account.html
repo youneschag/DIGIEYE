@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+    <link rel="stylesheet" href="../src/account.css">
+  </head>
+  <body>
+    <div class="ribbon-top"></div> <!-- Ruban en haut -->
+    <main id="main-holder">
+      <h1 id="login-header">Bienvenue !</h1>
+      <div class="buttons-container">
+        <button id="create-account-button" class="button">Créer un compte</button>
+        <button id="existing-account-button" class="button">J'ai déjà un compte</button>
+      </div>
+    
+    </main>
+    <div class="ribbon-bottom"></div> <!-- Ruban en bas -->
+    <script>
+        const createAccountButton = document.getElementById("create-account-button");
+        const existingAccountButton = document.getElementById("existing-account-button");
+    
+        createAccountButton.addEventListener("click", () => {
+          // Rediriger vers la page de création de compte
+          window.location.href = "create_account.html";
+        });
+    
+        existingAccountButton.addEventListener("click", () => {
+          // Rediriger vers la page de connexion avec compte existant
+          window.location.href = "login.html";
+        });        
+    </script>
+</body>
+</html>

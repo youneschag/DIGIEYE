@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>DIGIEYE</title>
+  </head>
+  <body>
+    <div class="ribbon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="97" height="32" viewBox="0 0 97 32" fill="none">
+        <g clip-path="url(#clip0_36_77957)">
+          <path d="M10.3011 32H23.8126C25.0525 32 26.194 31.3237 26.7894 30.2365L33.6962 17.6311C34.2529 16.6148 34.2529 15.3847 33.6962 14.3689L26.7894 1.76352C26.194 0.676266 25.0525 0 23.8126 0H10.3011C9.06123 0 7.92011 0.676266 7.32424 1.76352L0.417514 14.3689C-0.139171 15.3847 -0.139171 16.6148 0.417514 17.6311L7.32424 30.2365C7.92011 31.3237 9.06123 32 10.3011 32ZM12.5813 4.16167H21.5324C22.7723 4.16167 23.9138 4.83793 24.5092 5.92518L29.1354 14.3693C29.6925 15.3852 29.6925 16.6153 29.1354 17.6315L24.5092 26.0756C23.9138 27.1629 22.7723 27.8391 21.5324 27.8391H12.5813C11.3414 27.8391 10.1999 27.1629 9.60445 26.0756L4.97792 17.6315C4.42083 16.6153 4.42083 15.3852 4.97792 14.3693L9.60445 5.92518C10.1999 4.83793 11.3414 4.16167 12.5813 4.16167Z" fill="white"/>
+          <path d="M6.47607 16.1185C6.47607 13.6751 8.45712 11.6936 10.9006 11.6936C13.344 11.6936 15.3251 13.6747 15.3251 16.1185C15.3251 18.5624 13.3444 20.543 10.9006 20.543C8.45671 20.543 6.47607 18.562 6.47607 16.1185Z" fill="white"/>
+          <path d="M18.8069 16.2789C18.8069 13.8355 20.7879 11.8544 23.2314 11.8544C25.6748 11.8544 27.6559 13.8351 27.6559 16.2789C27.6559 18.7228 25.6753 20.7034 23.2314 20.7034C20.7875 20.7034 18.8069 18.7228 18.8069 16.2789Z" fill="white"/>
+          <path d="M40.3053 10.275C43.785 10.275 45.6971 12.4042 45.6971 15.7582C45.6971 19.4799 43.6871 21.7254 40.2143 21.7254H36.3257V10.275H40.3053ZM38.6749 19.8868H40.1898C42.2162 19.8868 43.2834 18.3689 43.2834 15.7937C43.2834 13.6657 42.3268 12.143 40.2066 12.143H38.6749V19.8868ZM50.0714 10.275V21.7254H47.7373V10.275H50.0714ZM61.8157 21.7254H60.0987C60.0191 21.3511 59.9562 20.8242 59.9248 20.3961C59.3359 21.5389 58.187 21.8927 56.7516 21.8927C53.7564 21.8927 52.1781 19.3995 52.1781 16.0651C52.1781 12.7307 54.0384 10.1227 57.4136 10.1227C60.1403 10.1227 61.5528 11.6455 61.834 13.56H59.544C59.3302 12.8384 58.8318 11.9948 57.2789 11.9948C55.2856 11.9948 54.5767 13.8979 54.5767 16.0798C54.5767 18.2616 55.3411 20.0353 57.2744 20.0353C58.9988 20.0353 59.4979 18.833 59.4979 17.3629V17.3086H57.1059V15.3317H61.8152V21.7254H61.8157ZM66.443 10.275V21.7254H64.1089V10.275H66.443Z" fill="white"/>
+          <path d="M76.2919 16.7287H71.314V19.8108H76.8098L76.529 21.7249H69.0387V10.2749H76.5005V12.2038H71.314V14.7982H76.2919V16.7291V16.7287ZM81.1813 21.7249V17.4094C81.1813 17.2796 81.1605 17.1609 81.0829 17.0392L77.46 10.2745H80.0895C80.8944 11.9989 81.9461 14.184 82.4563 15.2508C83.2068 13.622 84.079 11.8646 84.825 10.2745H87.2575L83.6096 16.9903C83.5448 17.0992 83.5154 17.1829 83.5154 17.3421V21.7249H81.1813ZM95.5869 16.7287H90.609V19.8108H96.1049L95.8241 21.7249H88.3337V10.2749H95.7955V12.2038H90.609V14.7982H95.5869V16.7291V16.7287Z" fill="white"/>
+          <path d="M36.1768 23.6191C36.4355 23.5803 36.7432 23.551 37.0799 23.551C37.6897 23.551 38.1243 23.6922 38.4125 23.9607C38.7051 24.2297 38.8761 24.6101 38.8761 25.1423C38.8761 25.6744 38.7104 26.1181 38.4027 26.4209C38.095 26.7286 37.5872 26.8943 36.9481 26.8943C36.6453 26.8943 36.3918 26.8801 36.1768 26.8556V23.6187V23.6191ZM36.6016 26.5287C36.709 26.5482 36.8653 26.5531 37.031 26.5531C37.9391 26.5531 38.4321 26.045 38.4321 25.1569C38.437 24.3811 37.9974 23.8881 37.0995 23.8881C36.8796 23.8881 36.7139 23.9073 36.6016 23.9317V26.5287Z" fill="white"/>
+          <path d="M39.8515 23.5755V26.8654H39.4266V23.5755H39.8515Z" fill="white"/>
+          <path d="M43.0969 26.7189C42.9067 26.7874 42.5312 26.8997 42.0868 26.8997C41.5889 26.8997 41.1787 26.7727 40.8563 26.4654C40.573 26.192 40.3979 25.7524 40.3979 25.2402C40.4028 24.2591 41.0763 23.5412 42.1794 23.5412C42.5602 23.5412 42.8577 23.6245 42.9998 23.6926L42.8973 24.0391C42.7214 23.9612 42.5018 23.8979 42.17 23.8979C41.3693 23.8979 40.8469 24.3958 40.8469 25.221C40.8469 26.0463 41.3497 26.5487 42.1162 26.5487C42.3941 26.5487 42.5847 26.5095 42.6826 26.4605V25.4798H42.0137V25.1382H43.0969V26.7193V26.7189Z" fill="white"/>
+          <path d="M44.1708 23.5755V26.8654H43.7459V23.5755H44.1708Z" fill="white"/>
+          <path d="M45.5367 23.9367H44.5364V23.5755H46.9721V23.9367H45.9669V26.8654H45.5371V23.9367H45.5367Z" fill="white"/>
+          <path d="M47.5084 25.8304L47.1668 26.8654H46.7272L47.8451 23.5755H48.3573L49.48 26.8654H49.0262L48.6744 25.8304H47.5084ZM48.5871 25.499L48.2651 24.5517C48.1916 24.3371 48.143 24.1416 48.0941 23.9514H48.0847C48.0357 24.1469 47.9822 24.3469 47.9186 24.5468L47.5965 25.499H48.5875H48.5871Z" fill="white"/>
+          <path d="M49.9624 23.5755H50.3873V26.5087H51.7933V26.8654H49.9624V23.5755Z" fill="white"/>
+          <path d="M53.7299 23.9367H52.7296V23.5755H55.1653V23.9367H54.16V26.8654H53.7303V23.9367H53.7299Z" fill="white"/>
+          <path d="M55.9554 23.5755V24.9517H57.5467V23.5755H57.976V26.8654H57.5467V25.3231H55.9554V26.8654H55.5305V23.5755H55.9554Z" fill="white"/>
+          <path d="M59.1376 23.5755V26.8654H58.7127V23.5755H59.1376Z" fill="white"/>
+          <path d="M59.8786 26.8654V23.5755H60.3423L61.3969 25.2402C61.6409 25.6255 61.8311 25.9724 61.987 26.3091L61.9972 26.3038C61.958 25.8651 61.9483 25.4643 61.9483 24.9517V23.5755H62.3482V26.8654H61.9189L60.8737 25.1962C60.6447 24.8301 60.4247 24.4538 60.259 24.0979L60.2443 24.1028C60.2688 24.5179 60.279 24.9129 60.279 25.4598V26.8658H59.8782L59.8786 26.8654Z" fill="white"/>
+          <path d="M65.5937 26.7189C65.4035 26.7874 65.028 26.8997 64.5836 26.8997C64.0853 26.8997 63.6755 26.7727 63.3531 26.4654C63.0703 26.192 62.8948 25.7524 62.8948 25.2402C62.8997 24.2591 63.5731 23.5412 64.6762 23.5412C65.057 23.5412 65.3546 23.6245 65.4966 23.6926L65.3941 24.0391C65.2182 23.9612 64.9987 23.8979 64.6669 23.8979C63.8661 23.8979 63.3437 24.3958 63.3437 25.221C63.3437 26.0463 63.8465 26.5487 64.613 26.5487C64.8909 26.5487 65.0815 26.5095 65.1787 26.4605V25.4798H64.5101V25.1382H65.5933V26.7193L65.5937 26.7189Z" fill="white"/>
+          <path d="M66.1843 26.3479C66.3744 26.4654 66.6528 26.5626 66.9454 26.5626C67.3801 26.5626 67.6339 26.3336 67.6339 26.0014C67.6339 25.6937 67.458 25.5178 67.014 25.3472C66.4769 25.1566 66.1447 24.8786 66.1447 24.4146C66.1447 23.902 66.5695 23.5216 67.2091 23.5216C67.5458 23.5216 67.7902 23.5996 67.9363 23.6824L67.8196 24.0289C67.7123 23.9705 67.4923 23.8726 67.1948 23.8726C66.7458 23.8726 66.5748 24.1407 66.5748 24.3656C66.5748 24.6733 66.7752 24.8248 67.2291 24.9998C67.7857 25.2149 68.0686 25.4835 68.0686 25.9667C68.0686 26.474 67.6931 26.9135 66.9168 26.9135C66.5997 26.9135 66.2532 26.8205 66.0773 26.7038L66.1847 26.3471L66.1843 26.3479Z" fill="white"/>
+          <path d="M69.6828 23.6142C69.8877 23.5803 70.1562 23.551 70.4982 23.551C70.9178 23.551 71.2251 23.6481 71.4206 23.824C71.6014 23.9803 71.7087 24.2195 71.7087 24.5125C71.7087 24.8055 71.621 25.0443 71.4549 25.2153C71.2308 25.4545 70.8647 25.5761 70.4497 25.5761C70.3227 25.5761 70.2052 25.5712 70.1081 25.5467V26.865H69.6832V23.6138L69.6828 23.6142ZM70.1077 25.2006C70.2003 25.2251 70.3174 25.2345 70.4586 25.2345C70.9713 25.2345 71.2839 24.9859 71.2839 24.5317C71.2839 24.0774 70.9762 23.8877 70.5076 23.8877C70.3223 23.8877 70.1803 23.902 70.1077 23.9215V25.2002V25.2006Z" fill="white"/>
+          <path d="M72.2792 23.5755H72.704V26.5087H74.11V26.8654H72.2792V23.5755Z" fill="white"/>
+          <path d="M75.115 25.8304L74.7734 26.8654H74.3338L75.4517 23.5755H75.9639L77.0866 26.8654H76.6328L76.281 25.8304H75.115ZM76.1936 25.499L75.8716 24.5517C75.7982 24.3371 75.7496 24.1416 75.7006 23.9514H75.6912C75.6423 24.1469 75.5888 24.3469 75.5251 24.5468L75.2031 25.499H76.194H76.1936Z" fill="white"/>
+          <path d="M77.8183 23.9367H76.818V23.5755H79.2537V23.9367H78.2485V26.8654H77.8187V23.9367H77.8183Z" fill="white"/>
+          <path d="M81.3225 25.3231H80.0439V26.5091H81.4686V26.8658H79.6186V23.5759H81.3952V23.9318H80.0435V24.9717H81.3221V25.3235L81.3225 25.3231Z" fill="white"/>
+          <path d="M82.0196 23.5755H83.7917V23.9314H82.4449V25.0248H83.6892V25.3766H82.4449V26.8654H82.02V23.5755H82.0196Z" fill="white"/>
+          <path d="M87.2077 25.1863C87.2077 26.3185 86.5196 26.9188 85.6801 26.9188C84.8406 26.9188 84.201 26.245 84.201 25.2496C84.201 24.2052 84.8504 23.522 85.7287 23.522C86.607 23.522 87.2077 24.2101 87.2077 25.1867V25.1863ZM84.6549 25.2398C84.6549 25.9426 85.0357 26.5723 85.7042 26.5723C86.3727 26.5723 86.7588 25.9524 86.7588 25.2051C86.7588 24.5509 86.4172 23.8677 85.7095 23.8677C85.0018 23.8677 84.6549 24.517 84.6549 25.2394V25.2398Z" fill="white"/>
+          <path d="M87.7587 23.6191C87.9737 23.5755 88.2811 23.551 88.5741 23.551C89.0279 23.551 89.3206 23.6338 89.5259 23.8191C89.692 23.9656 89.7846 24.1901 89.7846 24.4439C89.7846 24.8786 89.5116 25.1663 89.1647 25.2835V25.2982C89.4185 25.3859 89.5699 25.6202 89.6483 25.9618C89.7556 26.4209 89.8336 26.738 89.9021 26.865H89.4626C89.4091 26.7719 89.3357 26.4895 89.2426 26.0793C89.1447 25.6251 88.9696 25.4545 88.5839 25.4398H88.1839V26.8654H87.7591V23.6191H87.7587ZM88.1835 25.1178H88.6178C89.072 25.1178 89.3602 24.8684 89.3602 24.4929C89.3602 24.0685 89.0524 23.8824 88.6035 23.8779C88.3986 23.8779 88.2517 23.8975 88.1839 23.9171V25.1178H88.1835Z" fill="white"/>
+          <path d="M93.1573 25.4202C93.1328 24.9619 93.1039 24.4101 93.1083 24H93.0936C92.9814 24.3856 92.8451 24.7954 92.6786 25.2496L92.0978 26.8458H91.7758L91.2436 25.279C91.0873 24.8154 90.9555 24.3905 90.8632 24.0004H90.853C90.8436 24.4105 90.8192 24.9619 90.7898 25.4549L90.7016 26.8654H90.2968L90.5261 23.5755H91.0681L91.6293 25.1668C91.766 25.5716 91.8787 25.9328 91.9615 26.2744H91.9758C92.059 25.943 92.1762 25.5814 92.3227 25.1668L92.9084 23.5755H93.4503L93.6552 26.8654H93.2402L93.1573 25.4202Z" fill="white"/>
+          <path d="M96.0122 25.3231H94.7336V26.5091H96.1583V26.8658H94.3083V23.5759H96.0849V23.9318H94.7331V24.9717H96.0118V25.3235L96.0122 25.3231Z" fill="white"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_36_77957">
+            <rect width="96.1583" height="32" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="title-container">
+      <h1 class="title">
+        Total number of online devices: <span id="servicesCount">0</span>
+      </h1>
+    <div class="toolbar">
+      <div class="unbind-button-container">
+        <button id="unbindButton" disabled class="unbind-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+            <g clip-path="url(#clip0_36_77929)">
+              <mask id="mask0_36_77929" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-2" y="-2" width="20" height="19">
+                <path d="M-1.06668 -1.56671H17.0667V16.5666H-1.06668V-1.56671Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_36_77929)">
+                <path d="M15.5102 6.91821C15.2307 5.05199 13.5307 3.72221 11.6418 3.72221H9.47332C9.08043 3.72221 8.75554 4.0471 8.75554 4.43999C8.75554 4.83288 9.08043 5.15777 9.47332 5.15777H11.6644C12.8733 5.15777 13.9613 6.0191 14.0973 7.22044C14.2258 8.30088 13.6138 9.25288 12.6995 9.65333L13.7573 10.7111C14.9889 9.94044 15.752 8.51244 15.5102 6.91821ZM2.04621 1.1231C1.97626 1.05315 1.89321 0.997665 1.80182 0.959808C1.71042 0.921951 1.61247 0.902466 1.51354 0.902466C1.41462 0.902466 1.31666 0.921951 1.22526 0.959808C1.13387 0.997665 1.05083 1.05315 0.980875 1.1231C0.910925 1.19305 0.855437 1.2761 0.81758 1.36749C0.779722 1.45889 0.760238 1.55684 0.760238 1.65577C0.760238 1.7547 0.779722 1.85265 0.81758 1.94405C0.855437 2.03544 0.910925 2.11849 0.980875 2.18844L2.79421 4.00177C1.32843 4.60621 0.323542 6.09466 0.459542 7.80977C0.618209 9.80444 2.40132 11.2778 4.39599 11.2778H6.52665C6.91954 11.2778 7.24443 10.9529 7.24443 10.56C7.24443 10.1671 6.91954 9.84221 6.52665 9.84221H4.3431C3.11154 9.84221 2.00088 8.9431 1.88754 7.71155C1.83354 7.10163 2.02092 6.49485 2.40942 6.02158C2.79793 5.54831 3.35656 5.2463 3.96532 5.18044L5.55199 6.7671C5.2271 6.8351 4.97776 7.11466 4.97776 7.46221V7.53777C4.97776 7.93066 5.30265 8.25555 5.69554 8.25555H7.04043L8.75554 9.97066V11.2778H10.0627L12.556 13.7711C12.6259 13.8411 12.709 13.8965 12.8004 13.9344C12.8918 13.9723 12.9897 13.9917 13.0887 13.9917C13.1876 13.9917 13.2855 13.9723 13.3769 13.9344C13.4683 13.8965 13.5514 13.8411 13.6213 13.7711C13.6913 13.7012 13.7468 13.6181 13.7846 13.5267C13.8225 13.4353 13.842 13.3374 13.842 13.2384C13.842 13.1395 13.8225 13.0416 13.7846 12.9502C13.7468 12.8588 13.6913 12.7757 13.6213 12.7058L2.04621 1.1231ZM11.0222 7.46221C11.0222 7.06933 10.6973 6.74444 10.3044 6.74444H9.80576L10.9315 7.87021C10.9844 7.77199 11.0222 7.65866 11.0222 7.53777V7.46221Z" fill="white"/>
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_36_77929">
+                <rect width="16" height="13.8667" fill="white" transform="translate(0 0.56665)"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Unbind
+        </button>
+      </div>
+      <div class="export-button-container">
+        <button id="exportButton" class="export-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <g clip-path="url(#clip0_36_77938)">
+              <path d="M14.2105 9.73688V12.7193C14.2105 13.1148 14.0534 13.4941 13.7737 13.7738C13.4941 14.0535 13.1148 14.2106 12.7193 14.2106H2.28069C1.88519 14.2106 1.50589 14.0535 1.22623 13.7738C0.94657 13.4941 0.789459 13.1148 0.789459 12.7193V9.73688" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.77197 4.51758L7.50004 0.789509M7.50004 0.789509L11.2281 4.51758M7.50004 0.789509V9.73688" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_36_77938">
+                <rect width="15" height="15" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          Export Device List
+        </button>
+      </div>
+      <div class="refresh-button-container">
+        <button id="refreshButton" class="refresh-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M14.375 2.5V6.25H10.625" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0.625 12.5V8.75H4.375" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.19375 5.62499C2.51073 4.72923 3.04946 3.92836 3.75967 3.29712C4.46988 2.66588 5.32842 2.22484 6.25518 2.01515C7.18194 1.80546 8.14672 1.83395 9.05949 2.09797C9.97227 2.36199 10.8033 2.85293 11.475 3.52499L14.375 6.24999M0.625 8.74999L3.525 11.475C4.19672 12.147 5.02773 12.638 5.94051 12.902C6.85328 13.166 7.81806 13.1945 8.74482 12.9848C9.67158 12.7751 10.5301 12.3341 11.2403 11.7028C11.9505 11.0716 12.4893 10.2707 12.8062 9.37499" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Refresh
+        </button>
+      </div>
+      <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Filter">
+        <div class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M18.5 19L15.3584 15.8583M17.0556 11.7778C17.0556 14.9688 14.4688 17.5556 11.2778 17.5556C8.0868 17.5556 5.5 14.9688 5.5 11.7778C5.5 8.5868 8.0868 6 11.2778 6C14.4688 6 17.0556 8.5868 17.0556 11.7778Z" stroke="#797A80" stroke-width="1.44445" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="suggestions-section">
+          <ul id="suggestionList" class="suggestion-list"></ul>
+          <div id="notFoundMessage" style="display: none;">No results found</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="rubrique" class="rubrique">
+      <div class="rubrique-header">
+        <div class="rubrique-dot"></div>
+        <div class="rubrique-title"> Modify Network Parameters</div>
+        <div class="rubrique-close-button">&times;</div>
+      </div>
+      <hr class="rubrique-separator">
+      <div class="checkbox-container">
+        <input type="checkbox" id="dhcpCheckbox">
+        <label for="dhcpCheckbox">Enable DHCP</label>
+      </div>
+      <div id="rubriqueContent" class="rubrique-content">
+        <div class="input-container">
+          <div class="input-item">
+            <label for="interfaceInput">Interface:</label>
+            <input type="text" id="interfaceInput">
+          </div>
+          <div class="input-item">
+            <label for="servicenameInput">Service Name:</label>
+            <input type="text" id="servicenameInput">
+          </div>
+        </div>
+      </div>
+      <div class="security-verification">Security verification</div>
+      <div class="administrator-password">
+        <label for="adminPasswordInput">Administrator Password</label>
+        <div class="password-input-container"></div>
+        <input type="password" id="adminPasswordInput" class="password-input" placeholder="e.g. Admin123">
+        <span class="material-icons password-icon" id="passwordVisibilityToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+            <g clip-path="url(#clip0_164_794)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.02608 0.639387C0.781356 0.394659 0.384573 0.394659 0.139845 0.639387C-0.104883 0.884115 -0.104883 1.2809 0.139845 1.52563L2.60098 3.98676C1.55749 4.89246 0.685964 5.98186 0.0307746 7.20287C-0.0655025 7.38229 -0.0686041 7.5973 0.0224578 7.77942L0.582965 7.49917C0.0224578 7.77942 0.0225626 7.77963 0.0226765 7.77986L0.0229494 7.78041L0.0236581 7.78182L0.0257258 7.78591L0.0324574 7.79909C0.0380968 7.81005 0.0460401 7.82535 0.0562702 7.84468C0.0767263 7.88334 0.106352 7.93819 0.145014 8.00692C0.222289 8.1443 0.335943 8.33764 0.484926 8.56832C0.782114 9.02848 1.22396 9.6436 1.80287 10.2611C2.94927 11.4839 4.70761 12.7925 6.99963 12.7925V12.7926L7.00988 12.7924C8.21284 12.7728 9.38298 12.4198 10.3922 11.778L12.9732 14.359C13.2179 14.6037 13.6147 14.6037 13.8594 14.359C14.1041 14.1142 14.1041 13.7175 13.8594 13.4727L10.9141 10.5274C10.9096 10.5227 10.9049 10.5181 10.9002 10.5135L8.68227 8.29557C8.68057 8.29385 8.67885 8.29214 8.67713 8.29043L6.20833 5.82163C6.20665 5.81993 6.20497 5.81825 6.20327 5.81658L3.98408 3.59738C3.97955 3.59271 3.97496 3.58812 3.97031 3.58361L1.02608 0.639387ZM3.48971 4.87549C2.61665 5.61998 1.87591 6.50768 1.29955 7.50097C1.36124 7.6068 1.4408 7.7382 1.53777 7.88835C1.80569 8.30319 2.20239 8.85474 2.71722 9.4039C3.75734 10.5134 5.20557 11.5372 6.99453 11.5392C7.86953 11.524 8.72285 11.2904 9.47883 10.8646L8.1889 9.57468C8.10356 9.62647 8.01485 9.67293 7.92327 9.71374C7.63174 9.84364 7.31702 9.91349 6.99791 9.91912C6.67879 9.92475 6.36181 9.86605 6.06587 9.74651C5.76994 9.62698 5.50111 9.44906 5.27542 9.22338C5.04974 8.99769 4.87182 8.72887 4.75229 8.43293C4.63275 8.13699 4.57405 7.82001 4.57968 7.5009C4.58531 7.18178 4.65516 6.86707 4.78506 6.57553C4.82587 6.48395 4.87233 6.39525 4.92412 6.3099L3.48971 4.87549ZM5.86995 7.25573C5.84693 7.3428 5.83442 7.43253 5.83282 7.52301C5.83016 7.67384 5.8579 7.82366 5.9144 7.96353C5.9709 8.10341 6.05499 8.23047 6.16166 8.33714C6.26833 8.44381 6.39539 8.5279 6.53527 8.5844C6.67514 8.6409 6.82497 8.66864 6.9758 8.66598C7.06627 8.66439 7.156 8.65187 7.24307 8.62885L5.86995 7.25573ZM5.91746 3.58268C6.27169 3.49976 6.63436 3.45831 6.99816 3.45917L6.99963 3.45917C8.79094 3.45917 10.2409 4.48393 11.282 5.59444C11.7969 6.1436 12.1936 6.69515 12.4615 7.10999C12.5586 7.26042 12.6383 7.39203 12.7001 7.49795C12.4024 8.01297 12.0601 8.50106 11.6768 8.95653C11.454 9.22135 11.488 9.61667 11.7528 9.8395C12.0176 10.0623 12.413 10.0283 12.6358 9.76348C13.1475 9.15537 13.5943 8.49549 13.969 7.79459C14.0648 7.61533 14.0677 7.40072 13.9768 7.21892L13.4163 7.49917C13.9768 7.21892 13.9767 7.21871 13.9766 7.21848L13.9763 7.21794L13.9756 7.21653L13.9735 7.21243L13.9668 7.19925C13.9612 7.18829 13.9532 7.17299 13.943 7.15366C13.9225 7.115 13.8929 7.06015 13.8542 6.99142C13.777 6.85404 13.6633 6.6607 13.5143 6.43002C13.2171 5.96986 12.7753 5.35474 12.1964 4.73723C11.0501 3.51454 9.29203 2.20612 7.00037 2.20584L7.0011 2.20584L6.99963 2.8325V2.20584H7.00037C6.53966 2.20481 6.08039 2.25733 5.63181 2.36233C5.29482 2.44121 5.08558 2.77834 5.16446 3.11533C5.24334 3.45232 5.58047 3.66156 5.91746 3.58268Z" fill="#6C757D"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_164_794">
+                <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </div>
+      <div>
+        <a href="#" class="forgot-password-link" id="showRubriquepassword">Forgot Password?</a>
+      </div>
+      <div class="rubrique-container" id="rubriqueContainer"></div> 
+      <div id="errorContainer"></div>
+      <div class="rubrique-buttons">
+        <button id="sendButton">Modify</button>
+      </div>
+    </div>    
+    <div class="services-container">
+      <table id="servicesTable">
+        <thead>
+          <tr>
+            <th>
+              <input type="checkbox" id="selectAllCheckbox">
+            </th>            
+              <th data-column="id"><div class="header-cell">ID
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+                </div>
+              </th>
+              <th data-column="interface"><div class="header-cell">Interface
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+              </div>
+            </th>
+              <th data-column="service_name"><div class="header-cell">Service Name 
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+              </div>
+            </th>
+              <th data-column="mac_address"><div class="header-cell">Mac Address 
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+              </div>
+            </th>
+              <th data-column="ip_address"><div class="header-cell">IP Address 
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+              </div>
+            </th>
+              <th data-column="netmask"><div class="header-cell">Netmask
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+                </div>
+              </th>
+              <th data-column="broadcast"><div class="header-cell">Broadcast 
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+              </div>
+            </th>
+              <th data-column="service_port"><div class="header-cell">Service Port
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+              </svg>
+              <div class="separator"></div>
+            </div>
+          </th>
+              <th data-column="ipv6_addresses"><div class="header-cell">IPv6 Addresses
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+              </svg>
+              <div class="separator"></div>
+            </div>
+          </th>
+          <th data-column="device_type">
+            <div class="header-cell">Device Type
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+            </div>
+        </th>
+        <th data-column="status">
+            <div class="header-cell">Status
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+            </div>
+        </th>
+        <th data-column="software_version">
+            <div class="header-cell">Software Version
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+            </div>
+        </th>
+        <th data-column="http_port">
+            <div class="header-cell">HTTP Port
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+            </div>
+        </th>
+        <th data-column="device_serial_no">
+            <div class="header-cell">Device Trial No
+                <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M16.0687 9.70711L7.93141 9.70711C7.3256 9.70711 7.02269 9.70711 6.88242 9.8269C6.76072 9.93085 6.69613 10.0868 6.70869 10.2463C6.72316 10.4302 6.93735 10.6444 7.36573 11.0728L11.4344 15.1414C11.6324 15.3394 11.7314 15.4384 11.8455 15.4755C11.946 15.5082 12.0541 15.5082 12.1546 15.4755C12.2687 15.4384 12.3677 15.3394 12.5657 15.1414L16.6344 11.0728C17.0627 10.6444 17.2769 10.4302 17.2914 10.2463C17.304 10.0868 17.2394 9.93085 17.1177 9.8269C16.9774 9.70711 16.6745 9.70711 16.0687 9.70711Z" fill="#424656"/>
+                </svg>
+                <div class="separator"></div>
+            </div>
+        </th>        
+          </tr>
+        </thead>
+        <tbody id="servicesBody"></tbody>
+      </table>
+    </div>
+    <div id="passwordConfirmationModal" class="modal"></div>
+    <script src="../src/main.js"></script>
+    <script src="../src/renderer.js"></script>
+    <script src="../src/identifiant.js"></script>
+    <script src="../src/services.js"></script>
+    <script src="../src/client.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.18/jspdf.plugin.autotable.min.js"></script>
+
+  <script type="module" type="text/javascript">
+    const { ipcRenderer } = require('electron');
+    const fs = require('fs');
+    const path = require('path');
+    const filePath = path.join(__dirname, '../src/client_services.json');
+
+    let sortState = {
+      id: null,
+      interface: null,
+      service_name: null,
+      mac_address: null,
+      ip_address: null,
+      netmask: null,
+      broadcast: null,
+      service_port: null,
+      ipv6_addresses: null,
+      device_type: null,
+      status: null,
+      software_version: null,
+      http_port: null,
+      device_serial_no: null,
+  };  
+  let doubleClickTimeout = null;
+    let rubriqueVisible = false;
+
+const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+selectAllCheckbox.addEventListener('change', (event) => {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = event.target.checked;
+  });
+});
+
+    const servicesElement = document.getElementById('services');
+    let services = [];
+    let originalServices = [];
+    let editingServiceId = null;
+    const selectedServices = [];
+
+const servicesTableBody = document.getElementById('servicesBody');
+let originalTableContent = [];
+
+function displayServices() {
+  servicesTableBody.innerHTML = '';// Réinitialiser la liste des services
+  let idCounter = 1;
+  let emptyRowsNeeded = 0;
+
+  services.forEach((service, index) => {
+    const row = document.createElement('tr');
+
+    if (index % 2 === 0) {
+      row.classList.add('even-row');
+    } else {
+      row.classList.add('odd-row');
+    }
+
+    // Ajouter une classe spécifique pour la ligne des informations
+    if (index === 0) {
+      row.classList.add('information-row');
+    }
+
+    const checkboxCell = document.createElement('td');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.dataset.serviceIndex = index; // Store the index of the service in the dataset
+    checkboxCell.appendChild(checkbox);
+    row.appendChild(checkboxCell);
+
+    const idCell = document.createElement('td');
+    idCell.textContent = String(idCounter).padStart(3, '0');
+    row.appendChild(idCell);
+    idCounter++;
+
+    const interfaceCell = document.createElement('td');
+    interfaceCell.textContent = service['Interface'];
+    row.appendChild(interfaceCell);
+
+    const serviceNameCell = document.createElement('td');
+    serviceNameCell.textContent = service['Service Name'];
+    row.appendChild(serviceNameCell);
+
+    const macAddressCell = document.createElement('td');
+    macAddressCell.textContent = service['Mac Address'];
+    row.appendChild(macAddressCell);
+
+    const ipAddressCell = document.createElement('td');
+    ipAddressCell.textContent = service['IP Address'];
+    row.appendChild(ipAddressCell);
+
+    const netmaskCell = document.createElement('td');
+    netmaskCell.textContent = service['Netmask'];
+    row.appendChild(netmaskCell);
+
+    const broadcastCell = document.createElement('td');
+    broadcastCell.textContent = service['Broadcast'];
+    row.appendChild(broadcastCell);
+
+    const servicePortCell = document.createElement('td');
+    servicePortCell.textContent = service['Service Port'];
+    row.appendChild(servicePortCell);
+
+    const ipv6AddressCell = document.createElement('td');
+    ipv6AddressCell.textContent = service['IPv6 Address'];
+    row.appendChild(ipv6AddressCell);
+
+    const deviceTypeCell = document.createElement('td');
+    deviceTypeCell.textContent = service['Device Type'];
+    row.appendChild(deviceTypeCell);
+
+    const statusCell = document.createElement('td');
+    statusCell.textContent = service['Status'];
+    row.appendChild(statusCell);
+
+    const softwareVersionCell = document.createElement('td');
+    softwareVersionCell.textContent = service['Software Version'];
+    row.appendChild(softwareVersionCell);
+
+    const httpPortCell = document.createElement('td');
+    httpPortCell.textContent = service['HTTP Port'];
+    row.appendChild(httpPortCell);
+
+    const deviceSerialNoCell = document.createElement('td');
+    deviceSerialNoCell.textContent = service['Device Trial No'];
+    row.appendChild(deviceSerialNoCell);
+
+    row.addEventListener('click', () => {
+      if (doubleClickTimeout) {
+        clearTimeout(doubleClickTimeout);
+      }
+      doubleClickTimeout = setTimeout(() => {
+        displayRubrique(service);
+        setTimeout(() => {
+          rubrique.classList.add('active');
+          toolbarButtons.style.transform = 'translateX(-643px)';
+        }, 250);
+      }, 250);
+    });
+  
+    row.addEventListener('dblclick', () => {
+      clearTimeout(doubleClickTimeout);
+      hideRubrique();
+      setTimeout(() => {
+        rubrique.classList.remove('active');
+        toolbarButtons.style.transform = 'translateX(0)';
+      }, 250);
+    });
+
+    row.classList.add('table-row-clickable');
+
+    servicesTableBody.appendChild(row);
+    emptyRowsNeeded += calculateEmptyRowsForRow(row);
+  });
+
+  insertEmptyRows(emptyRowsNeeded);
+
+  // Update the count of detected services
+  const servicesCountElement = document.getElementById('servicesCount');
+  servicesCountElement.textContent = services.length;
+
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const rubrique = document.getElementById('rubrique');
+const toolbarButtons = document.querySelector('.toolbar');
+const suggestionsSection = document.querySelector('.suggestions-section');
+
+let lastSelectedService = null; // Ajoutez cette variable pour suivre le dernier service sélectionné
+
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent row click event when clicking the checkbox
+    
+    if (checkbox.id === 'dhcpCheckbox') {
+      // Handle "Enable DHCP" checkbox behavior separately
+      if (checkbox.checked) {
+        rubrique.classList.add('dhcp-active'); // Ajoutez une classe pour masquer la rubrique
+      } else {
+        rubrique.classList.remove('dhcp-active'); // Supprimez la classe pour afficher la rubrique
+        // Réafficher les informations à l'intérieur de la rubrique
+        if (lastSelectedService) {
+          displayRubrique(lastSelectedService); // Réafficher le dernier service sélectionné
+        }
+      }
+    } else {
+      // Handle individual checkbox behavior here
+      if (checkbox.checked) {
+        const serviceIndex = parseInt(checkbox.dataset.serviceIndex, 10);
+        const selectedService = services[serviceIndex];
+        lastSelectedService = selectedService; // Mettez à jour le dernier service sélectionné
+        displayRubrique(selectedService);
+        setTimeout(() => {
+          rubrique.classList.add('active');
+          toolbarButtons.style.transform = 'translateX(-643px)';
+        }, 250);
+      } else {
+        hideRubrique();
+        setTimeout(() => {
+          rubrique.classList.remove('active');
+          toolbarButtons.style.transform = 'translateX(0)';
+        }, 250);
+      }
+    }
+  });
+});
+}
+
+function loadServices() {
+  services.length = 0; // Vider le tableau des services
+  originalServices.length = 0;
+
+  fetch('../src/server_services.json') // Charger le fichier JSON
+    .then((response) => response.json())
+    .then((data) => {
+      services.push(...data); // Ajouter les services du fichier JSON à la constante 'services'
+      displayServices(); // Mettre à jour la liste des services dans index.html
+    })
+    .catch((error) => {
+      console.error('Erreur lors de la récupération des services:', error);
+    });
+}
+
+function showSuggestions() {
+  const searchTerm = document.getElementById('searchBar').value.toLowerCase();
+  const suggestionList = document.getElementById('suggestionList');
+  suggestionList.innerHTML = '';
+
+  const suggestions = new Set(); // Using a Set to avoid duplicate suggestions
+
+  // Get all words from the page content (excluding HTML tags)
+  const frontendWords = getAllFrontendTextContent().toLowerCase().match(/\b\w+\b/g);
+
+  if (searchTerm.length > 0) {
+    frontendWords.forEach((word) => {
+      if (word.includes(searchTerm)) {
+        suggestions.add(word);
+      }
+    });
+
+    if (suggestions.size > 0) {
+      suggestionList.innerHTML = '';
+
+      suggestions.forEach((word) => {
+        const suggestion = document.createElement('li');
+        suggestion.textContent = word;
+        suggestionList.appendChild(suggestion);
+        suggestion.onclick = () => {
+          document.getElementById('searchBar').value = word;
+          suggestionList.innerHTML = ''; // Clear suggestion list after selecting
+          removeHighlighting(); // Remove previous highlighting
+          highlightOccurrences(word);
+          highlightAndFade(word);
+          hideRubrique(); // Highlight the selected word
+          filterServices(word);
+        };
+        suggestionList.appendChild(suggestion);
+      });
+
+      // Display suggestion list
+      suggestionList.parentElement.classList.add('show');
+      document.getElementById('notFoundMessage').style.display = 'none';
+    } else {
+      // Hide suggestion list when no suggestions found
+      suggestionList.parentElement.classList.remove('show');
+      document.getElementById('notFoundMessage').style.display = 'block';
+    }
+  } else {
+    // Hide suggestion list when search bar is empty
+    suggestionList.parentElement.classList.remove('show');
+    document.getElementById('notFoundMessage').style.display = 'none';
+    removeHighlighting(); // Remove highlighting when search bar is empty
+  }
+}
+
+function filterServices(selectedWord) {
+  const searchTerm = selectedWord.toLowerCase();
+  let filteredServices;
+
+  if (searchTerm.length > 0) {
+    filteredServices = services.filter((service) => {
+      return service['Interface'].toLowerCase() === searchTerm; // Modification ici
+    });
+  } else {
+    filteredServices = services;
+  }
+
+  // Update the services with the filtered services
+  services = filteredServices;
+
+  const notFoundMessage = document.getElementById('notFoundMessage');
+  if (services.length === 0) {
+    // Display message if no search results are found
+    notFoundMessage.style.display = 'block';
+  } else {
+    notFoundMessage.style.display = 'none';
+  }
+
+  // Update the displayed services in the table
+  displayServices();
+}
+
+function highlightAndFade(word) {
+  const highlightedElements = document.querySelectorAll('.highlighted-bg');
+  highlightedElements.forEach((element) => {
+    element.classList.remove('highlighted-bg');
+  });
+
+  const searchTermRegex = new RegExp(`\\b${word}\\b`, 'gi');
+
+  suggestionList.parentElement.classList.remove('show'); // Masquer la liste de suggestions
+  searchBar.value = word; // Remplir la barre de recherche avec le mot sélectionné
+
+  suggestionList.childNodes.forEach((node) => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const parentElement = node.parentNode;
+      const highlightedNode = node.textContent.replace(
+        searchTermRegex,
+        (match) => `<span class="highlighted-bg">${match}</span>`
+      );
+      parentElement.innerHTML = highlightedNode;
+      parentElement.classList.add('highlighted-bg'); // Ajoutez la classe à la balise parente
+    }
+  });
+  
+  setTimeout(() => {
+    // Supprimer la mise en évidence après 2 secondes
+    highlightedElements.forEach((element) => {
+      element.classList.remove('highlighted-bg');
+    });
+  }, 2000);
+}
+
+function getAllFrontendTextContent() {
+  const allTextContent = [];
+  const frontendElements = document.querySelectorAll('body *:not(script)'); // Exclude script tags
+
+  function getTextContent(element) {
+    if (element.nodeType === Node.TEXT_NODE) {
+      allTextContent.push(element.textContent.trim());
+    } else {
+      for (const child of element.childNodes) {
+        if (child.nodeType !== Node.COMMENT_NODE) {
+          getTextContent(child);
+        }
+      }
+    }
+  }
+
+  frontendElements.forEach(getTextContent);
+  return allTextContent.join(' ');
+}
+
+function handleSearchKeyPress(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Empêcher le comportement par défaut de la touche "Entrée" (par exemple, soumission du formulaire)
+    const searchTerm = document.getElementById('searchBar').value.trim();
+
+    if (searchTerm !== '') {
+      // Recherchez le mot et mettez-le en surbrillance en jaune
+      highlightOccurrences(searchTerm);
+    }
+  }
+}
+
+function serviceContainsText(service, searchTerm) {
+  for (const key in service) {
+    if (service[key].toLowerCase().includes(searchTerm)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Écouter l'événement keydown sur l'élément document
+document.addEventListener('keydown', handleSearchKeyPress);
+
+function highlightOccurrences(word) {
+  const suggestionList = document.getElementById('suggestionList');
+  const searchTermRegex = new RegExp(`\\b${word}\\b`, 'gi');
+
+  suggestionList.childNodes.forEach((node) => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const highlightedNode = node.textContent.replace(
+        searchTermRegex,
+        (match) => `<span class="highlighted${match === word ? ' clicked' : ''}">${match}</span>`
+      );
+      node.parentNode.innerHTML = highlightedNode;
+    }
+  });
+}
+
+// Function to remove the highlighting from the page
+function removeHighlighting() {
+  const highlightedElements = document.querySelectorAll('.highlighted');
+  highlightedElements.forEach((element) => {
+    element.outerHTML = element.innerHTML;
+  });
+}
+document.addEventListener('click', handleDocumentClick);
+
+function handleDocumentClick(event) {
+  const clickedWord = event.target.textContent;
+  const searchTermRegex = new RegExp(`${clickedWord}`, 'gi');
+  const frontendContent = document.body.textContent;
+
+  if (frontendContent.match(searchTermRegex)) {
+    highlightOccurrences(clickedWord);
+  }
+}
+
+function updateSelectedServices() {
+  selectedServices.length = 0;
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((checkbox, index) => {
+    if (checkbox.checked) {
+      selectedServices.push(services[index]);
+    }
+  });
+}
+
+function exportToPDF() {
+  updateSelectedServices();
+  const doc = new window.jspdf.jsPDF();
+  doc.text('Device List', 15, 15);
+
+  const columns = ['ID', 'Interface', 'Service Name', 'Mac Address', 'IP Address', 'Netmask', 'Broadcast', 'Service Port', 'IPv6 Address', 'Device Type', 'Status', 'Software Version', 'HTTP Port', 'Device Trial No'];
+  let data;
+  if (selectedServices.length > 0) {
+    // If checkboxes are selected, export only the selected services
+    data = selectedServices.map(service => columns.map(column => service[column]));
+  } else {
+    // If no checkboxes are selected, export all services
+    data = services.map(service => columns.map(column => service[column]));
+  }
+  doc.autoTable({
+    head: [columns],
+    body: data,
+    startY: 25,
+  });
+
+  doc.save('device_list.pdf');
+}
+
+const exportButton = document.getElementById('exportButton');
+exportButton.onclick = exportToPDF;
+
+const unbindButton = document.getElementById('unbindButton');
+
+function unbindClicked() {
+}
+
+function calculateEmptyRowsForRow(serviceRow) {
+  const windowHeight = window.innerHeight;
+  const rowBottom = serviceRow.getBoundingClientRect().bottom;
+  const rowHeight = 48; // Assume that each row has a fixed height of 48px
+
+  return Math.floor((windowHeight - rowBottom) / rowHeight);
+}
+
+function insertEmptyRows(emptyRowsNeeded) {
+  const servicesTableBody = document.getElementById('servicesBody');
+  let isEvenRow = services.length % 2 === 0; // Check if the last service row was even
+  let emptyRowsHtml = '';
+
+  for (let i = 0; i < emptyRowsNeeded; i++) {
+    const emptyRow = document.createElement('tr');
+    emptyRow.classList.add('empty-row');
+
+    if (isEvenRow) {
+      emptyRow.classList.add('even-row');
+    } else {
+      emptyRow.classList.add('odd-row');
+    }
+
+    const emptyCell = document.createElement('td');
+    emptyCell.colSpan = 20;
+    emptyRow.appendChild(emptyCell);
+
+    emptyRowsHtml += emptyRow.outerHTML;
+
+    // Toggle the isEvenRow for the next iteration
+    isEvenRow = !isEvenRow;
+  }
+
+  servicesTableBody.insertAdjacentHTML('beforeend', emptyRowsHtml);
+}
+
+const sortIcons = document.querySelectorAll('.sort-icon');
+let sortOrder = 'asc';
+
+sortIcons.forEach(icon => {
+  icon.addEventListener('click', (event) => {
+    const tableHeader = event.target.parentElement;
+    const columnName = tableHeader.dataset.columnName;
+    sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+    if (sortOrder === 'desc') {
+      icon.classList.add('reverse');
+    } else {
+      icon.classList.remove('reverse');
+    }
+    sortColumn('Interface', sortOrder);
+  });
+});
+
+const servicesTable = document.getElementById('servicesTable');
+servicesTable.addEventListener('click', handleTableHeaderClick);
+
+function handleTableHeaderClick(event) {
+  const target = event.target;
+  if (target.tagName === 'I' && target.classList.contains('fa-sort')) {
+    // A triangle icon was clicked, show the sorting rubrique
+    const tableHeader = target.parentElement;
+  }
+}
+
+function sortColumn(columnName, sortType) {
+  services.sort((a, b) => {
+    const aValue = a[columnName];
+    const bValue = b[columnName];
+
+    if (sortType === 'asc') {
+      return sortAscending(aValue, bValue);
+    } else if (sortType === 'desc') {
+      return sortDescending(aValue, bValue);
+    }
+
+    return 0;
+  });
+
+  displayServices(); // Mettre à jour l'affichage des services après le tri
+}
+
+// Fonction de comparaison pour l'ordre croissant
+function sortAscending(aValue, bValue) {
+  if (typeof aValue === 'number' && typeof bValue === 'number') {
+    return aValue - bValue;
+  } else if (typeof aValue === 'string' && typeof bValue === 'string') {
+    return aValue.localeCompare(bValue);
+  } else {
+    return 0;
+  }
+}
+
+// Fonction de comparaison pour l'ordre décroissant
+function sortDescending(aValue, bValue) {
+  if (typeof aValue === 'number' && typeof bValue === 'number') {
+    return bValue - aValue;
+  } else if (typeof aValue === 'string' && typeof bValue === 'string') {
+    return bValue.localeCompare(aValue);
+  } else {
+    return 0;
+  }
+}
+
+// Add event listener to the "X" button in the rubrique
+document.querySelector('.rubrique-close-button').addEventListener('click', function () {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const rubrique = document.getElementById('rubrique');
+  const toolbarButtons = document.querySelector('.toolbar');
+  const suggestionsSection = document.querySelector('.suggestions-section');
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+  hideRubrique();
+  rubrique.classList.remove('active');
+  toolbarButtons.style.transform = 'translateX(0)';
+  showError('');
+});
+
+const passwordInput = document.getElementById("adminPasswordInput");
+const passwordVisibilityToggle = document.getElementById("passwordVisibilityToggle");
+
+passwordVisibilityToggle.addEventListener("click", () => {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+});
+
+const showRubriquepassword = document.getElementById('showRubriquepassword');
+const rubriqueContainer = document.getElementById('rubriqueContainer');
+
+showRubriquepassword.addEventListener('click', () => {
+  // Créer et afficher la rubrique modale
+  rubriqueContainer.innerHTML = ''; // Effacer le contenu précédent
+  const overlay = document.createElement('div'); // Nouvel élément de superposition
+  overlay.classList.add('rubrique-overlay'); // Ajouter la classe de superposition
+  rubriqueContainer.appendChild(overlay);
+
+  const rubrique = createRubriqueModal();
+  rubriqueContainer.appendChild(rubrique);
+  rubriqueContainer.style.display = 'block';
+  overlay.style.display = 'block';
+
+  // Utiliser setTimeout pour déclencher la transition après l'affichage
+  setTimeout(() => {
+    rubrique.style.bottom = '10%'; // Apparition légèrement plus bas
+  }, 10); // Ajout d'un petit délai pour garantir que la transition se produise
+});
+
+function createRubriqueModal() {
+  const rubrique = document.createElement('div');
+  rubrique.classList.add('rubrique-modal');
+
+  // Créer le ruban
+  const ribbon = document.createElement('div');
+  ribbon.classList.add('rubrique-ribbon');
+  const ribbonTitle = document.createElement('h2');
+  ribbonTitle.textContent = 'Reset Password';
+
+  // Créer la croix de fermeture
+  const closeIcon = document.createElement('div');
+  closeIcon.classList.add('rubrique-close-button');
+  closeIcon.innerHTML = '&times;';
+  ribbon.appendChild(ribbonTitle);
+  ribbon.appendChild(closeIcon);
+  rubrique.appendChild(ribbon);
+
+  const infoText = document.createElement('p');
+  infoText.classList.add('rubrique-info-text');
+  infoText.textContent = "To reset your password for this device, please enter the key or import the key file provided by the technical engineer.";
+  rubrique.appendChild(infoText);
+
+  const filesMethodText = document.createElement('p');
+  filesMethodText.classList.add('rubrique-files-method');
+  filesMethodText.textContent = "Files Method";
+  rubrique.appendChild(filesMethodText);
+
+  const checkboxesWrapper = document.createElement('div');
+  checkboxesWrapper.classList.add('rubrique-checkboxes-wrapper');
+
+  const inputCheckbox = document.createElement('input');
+  inputCheckbox.type = "checkbox";
+  inputCheckbox.classList.add('rubrique-checkbox');
+  inputCheckbox.id = "inputCheckbox";
+  
+  const inputLabel = document.createElement('label');
+  inputLabel.textContent = "Input Key";
+  inputLabel.classList.add('rubrique-checkbox-label');
+  inputLabel.setAttribute('for', 'inputCheckbox');
+  
+  const importCheckbox = document.createElement('input');
+  importCheckbox.type = "checkbox";
+  importCheckbox.classList.add('rubrique-checkbox');
+  importCheckbox.id = "importCheckbox";
+  
+  const importLabel = document.createElement('label');
+  importLabel.textContent = "Import File";
+  importLabel.classList.add('rubrique-checkbox-label'); 
+  importLabel.setAttribute('for', 'importCheckbox');  
+
+  checkboxesWrapper.appendChild(inputCheckbox);
+  checkboxesWrapper.appendChild(inputLabel);
+  checkboxesWrapper.appendChild(importCheckbox);
+  checkboxesWrapper.appendChild(importLabel);
+  rubrique.appendChild(checkboxesWrapper);
+
+  const textInputsContainer = document.createElement('div');
+  textInputsContainer.classList.add('rubrique-text-inputs-container');
+
+  const textInput1 = document.createElement('input');
+  textInput1.type = "text";
+  textInput1.classList.add('rubrique-text-input');
+  textInputsContainer.appendChild(textInput1);
+
+  const newPasswordText = document.createElement('p');
+  newPasswordText.classList.add('rubrique-files-method', 'rubrique-align-left');
+  newPasswordText.textContent = "New password";
+  textInputsContainer.appendChild(newPasswordText);
+  textInputsContainer.appendChild(createPasswordIcon());
+
+  const textInput2 = document.createElement('input');
+  textInput2.type = "text";
+  textInput2.classList.add('rubrique-text-input');
+  textInputsContainer.appendChild(textInput2);
+
+  const confirmPasswordText = document.createElement('p');
+  confirmPasswordText.classList.add('rubrique-files-method', 'rubrique-align-left');
+  confirmPasswordText.textContent = "Confirm password";
+  textInputsContainer.appendChild(confirmPasswordText);
+  textInputsContainer.appendChild(createPasswordIcon()); 
+
+  const textInput3 = document.createElement('input');
+  textInput3.type = "text";
+  textInput3.classList.add('rubrique-text-input');
+  textInputsContainer.appendChild(textInput3);
+
+  const resetIPCText = document.createElement('p');
+  resetIPCText.classList.add('rubrique-files-method', 'rubrique-align-left');
+  resetIPCText.textContent = "Reset IPC";
+  textInputsContainer.appendChild(resetIPCText);
+
+  rubrique.appendChild(textInputsContainer);
+
+  const checkboxesWrapper2 = document.createElement('div');
+  checkboxesWrapper2.classList.add('rubrique-checkboxes-wrapper');
+
+  const resetCheckbox = document.createElement('input');
+  resetCheckbox.type = "checkbox";
+  resetCheckbox.classList.add('rubrique-checkbox');
+  resetCheckbox.id = "resetCheckbox";
+
+  const resetLabel = document.createElement('label');
+  resetLabel.textContent = "No reset";
+  resetLabel.classList.add('rubrique-checkbox-label');
+  resetLabel.setAttribute('for', 'NoResetCheckbox');
+
+  const noResetCheckbox = document.createElement('input');
+  noResetCheckbox.type = "checkbox";
+  noResetCheckbox.classList.add('rubrique-checkbox');
+  noResetCheckbox.id = "noResetCheckbox";
+
+  const noResetLabel = document.createElement('label');
+  noResetLabel.textContent = "Reset";
+  noResetLabel.classList.add('rubrique-checkbox-label');
+  noResetLabel.setAttribute('for', 'resetCheckbox');
+
+  checkboxesWrapper2.appendChild(noResetCheckbox);
+  checkboxesWrapper2.appendChild(resetLabel);
+  checkboxesWrapper2.appendChild(resetCheckbox);
+  checkboxesWrapper2.appendChild(noResetLabel);
+  rubrique.appendChild(checkboxesWrapper2);
+
+  const separator = document.createElement('hr'); 
+  separator.classList.add('rubrique-separators');
+  rubrique.appendChild(separator);
+
+  // Créer les boutons "Confirm" et "Cancel"
+  const buttonsContainer = document.createElement('div');
+  buttonsContainer.classList.add('rubrique-buttons-container');
+
+  const cancelButton = document.createElement('button');
+  cancelButton.classList.add('rubrique-cancel-button');
+  cancelButton.textContent = 'Cancel';
+
+  const confirmButton = document.createElement('button');
+  confirmButton.classList.add('rubrique-confirm-button');
+  confirmButton.textContent = 'Confirm';
+
+  buttonsContainer.appendChild(cancelButton);
+  buttonsContainer.appendChild(confirmButton);
+  rubrique.appendChild(buttonsContainer);
+
+  closeIcon.addEventListener('click', () => {
+    rubrique.style.bottom = '-750px'; // Fait disparaître la rubrique
+    overlay.style.display = 'none'; 
+  });
+  
+  cancelButton.addEventListener("click", () => {
+    rubrique.style.bottom = '-750px'; // Fait disparaître la rubrique
+    overlay.style.display = 'none';
+  });  
+  
+  return rubrique;
+}
+
+function createPasswordIcon() {
+  const passwordIcon = document.createElement('span');
+  passwordIcon.classList.add('material-icons', 'password-icon');
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', '14');
+  svg.setAttribute('height', '15');
+  svg.setAttribute('viewBox', '0 0 14 15');
+  svg.setAttribute('fill', 'none');
+
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  path.setAttribute('fill-rule', 'evenodd');
+  path.setAttribute('clip-rule', 'evenodd');
+  path.setAttribute('d', "M1.02608 0.639387C0.781356 0.394659 0.384573 0.394659 0.139845 0.639387C-0.104883 0.884115 -0.104883 1.2809 0.139845 1.52563L2.60098 3.98676C1.55749 4.89246 0.685964 5.98186 0.0307746 7.20287C-0.0655025 7.38229 -0.0686041 7.5973 0.0224578 7.77942L0.582965 7.49917C0.0224578 7.77942 0.0225626 7.77963 0.0226765 7.77986L0.0229494 7.78041L0.0236581 7.78182L0.0257258 7.78591L0.0324574 7.79909C0.0380968 7.81005 0.0460401 7.82535 0.0562702 7.84468C0.0767263 7.88334 0.106352 7.93819 0.145014 8.00692C0.222289 8.1443 0.335943 8.33764 0.484926 8.56832C0.782114 9.02848 1.22396 9.6436 1.80287 10.2611C2.94927 11.4839 4.70761 12.7925 6.99963 12.7925V12.7926L7.00988 12.7924C8.21284 12.7728 9.38298 12.4198 10.3922 11.778L12.9732 14.359C13.2179 14.6037 13.6147 14.6037 13.8594 14.359C14.1041 14.1142 14.1041 13.7175 13.8594 13.4727L10.9141 10.5274C10.9096 10.5227 10.9049 10.5181 10.9002 10.5135L8.68227 8.29557C8.68057 8.29385 8.67885 8.29214 8.67713 8.29043L6.20833 5.82163C6.20665 5.81993 6.20497 5.81825 6.20327 5.81658L3.98408 3.59738C3.97955 3.59271 3.97496 3.58812 3.97031 3.58361L1.02608 0.639387ZM3.48971 4.87549C2.61665 5.61998 1.87591 6.50768 1.29955 7.50097C1.36124 7.6068 1.4408 7.7382 1.53777 7.88835C1.80569 8.30319 2.20239 8.85474 2.71722 9.4039C3.75734 10.5134 5.20557 11.5372 6.99453 11.5392C7.86953 11.524 8.72285 11.2904 9.47883 10.8646L8.1889 9.57468C8.10356 9.62647 8.01485 9.67293 7.92327 9.71374C7.63174 9.84364 7.31702 9.91349 6.99791 9.91912C6.67879 9.92475 6.36181 9.86605 6.06587 9.74651C5.76994 9.62698 5.50111 9.44906 5.27542 9.22338C5.04974 8.99769 4.87182 8.72887 4.75229 8.43293C4.63275 8.13699 4.57405 7.82001 4.57968 7.5009C4.58531 7.18178 4.65516 6.86707 4.78506 6.57553C4.82587 6.48395 4.87233 6.39525 4.92412 6.3099L3.48971 4.87549ZM5.86995 7.25573C5.84693 7.3428 5.83442 7.43253 5.83282 7.52301C5.83016 7.67384 5.8579 7.82366 5.9144 7.96353C5.9709 8.10341 6.05499 8.23047 6.16166 8.33714C6.26833 8.44381 6.39539 8.5279 6.53527 8.5844C6.67514 8.6409 6.82497 8.66864 6.9758 8.66598C7.06627 8.66439 7.156 8.65187 7.24307 8.62885L5.86995 7.25573ZM5.91746 3.58268C6.27169 3.49976 6.63436 3.45831 6.99816 3.45917L6.99963 3.45917C8.79094 3.45917 10.2409 4.48393 11.282 5.59444C11.7969 6.1436 12.1936 6.69515 12.4615 7.10999C12.5586 7.26042 12.6383 7.39203 12.7001 7.49795C12.4024 8.01297 12.0601 8.50106 11.6768 8.95653C11.454 9.22135 11.488 9.61667 11.7528 9.8395C12.0176 10.0623 12.413 10.0283 12.6358 9.76348C13.1475 9.15537 13.5943 8.49549 13.969 7.79459C14.0648 7.61533 14.0677 7.40072 13.9768 7.21892L13.4163 7.49917C13.9768 7.21892 13.9767 7.21871 13.9766 7.21848L13.9763 7.21794L13.9756 7.21653L13.9735 7.21243L13.9668 7.19925C13.9612 7.18829 13.9532 7.17299 13.943 7.15366C13.9225 7.115 13.8929 7.06015 13.8542 6.99142C13.777 6.85404 13.6633 6.6607 13.5143 6.43002C13.2171 5.96986 12.7753 5.35474 12.1964 4.73723C11.0501 3.51454 9.29203 2.20612 7.00037 2.20584L7.0011 2.20584L6.99963 2.8325V2.20584H7.00037C6.53966 2.20481 6.08039 2.25733 5.63181 2.36233C5.29482 2.44121 5.08558 2.77834 5.16446 3.11533C5.24334 3.45232 5.58047 3.66156 5.91746 3.58268Z");
+  path.setAttribute('fill', '#6C757D');
+
+  svg.appendChild(path);
+  passwordIcon.appendChild(svg);
+
+  return passwordIcon;
+}
+
+function hideRubrique() {
+  const rubriqueElement = document.getElementById('rubrique');
+  rubriqueElement.classList.remove('rubrique-open');
+}
+
+function displayRubrique(service) {
+
+  const rubriqueContent = document.getElementById('rubriqueContent');
+  rubriqueContent.innerHTML = '';
+
+  // Ajouter un élément br pour le retour à la ligne
+  rubriqueContent.appendChild(document.createElement('br'));
+
+  // Ajouter les champs de texte pour les informations modifiables avec des labels
+  addInputWithLabel('Interface', 'interfaceInput', service['Interface']);
+  addInputWithLabel('Service Name', 'servicenameInput', service['Service Name']);
+  addInputWithLabel('Mac Address', 'macAddressInput', service['Mac Address']);
+  addInputWithLabel('Adresse IP', 'ipAddressInput', service['IP Address']);
+  addInputWithLabel('Netmask', 'netmaskInput', service['Netmask']);
+  addInputWithLabel('Broadcast', 'broadcastInput', service['Broadcast']);
+  addInputWithLabel('Service Port', 'serviceportInput', service['Service Port']);
+  addInputWithLabel('IPv6 Address', 'ipv6addressInput', service['IPv6 Address']);
+  addInputWithLabel('Device Type', 'deviceTypeInput', service['Device Type']);
+  addInputWithLabel('Status', 'statusInput', service['Status']);
+  addInputWithLabel('Software Version', 'softwareversionInput', service['Software Version']);
+  addInputWithLabel('HTTP Port', 'httpportInput', service['HTTP Port']);
+  addInputWithLabel('Device Trial No', 'deviceserialInput', service['Device Trial No']);
+
+  function addInputWithLabel(labelText, inputId, inputValue) {
+    // Créer l'élément label
+    const label = document.createElement('label');
+    label.for = inputId;
+    label.textContent = labelText + '';
+    rubriqueContent.appendChild(label);
+  
+    // Créer l'élément input
+    const input = document.createElement('input');
+    input.id = inputId;
+    input.type = 'text';
+    input.value = inputValue;
+    rubriqueContent.appendChild(input);
+  
+    // Ajouter une ligne vide après chaque champ de texte
+    rubriqueContent.appendChild(document.createElement('br'));
+  }
+  
+    const rubriqueElement = document.getElementById('rubrique');
+    rubriqueElement.classList.add('rubrique-open');
+
+    const sendButton = document.getElementById('sendButton');
+    sendButton.onclick = sendClicked;
+}
+
+let popupWindow;
+
+function updateClientServices(services) {
+  const jsonData = JSON.stringify(services);
+  fs.writeFile(filePath, jsonData, (err) => {
+    if (err) {
+      console.error('Error writing to client_services.json:', err);
+      return;
+    }
+    console.log('Services updated successfully.');
+  });
+}
+
+function sendClicked() {
+  const passwordInput = document.getElementById('adminPasswordInput').value;
+
+  // Récupérer les valeurs des champs de texte
+  const interfaceValue = document.getElementById('interfaceInput').value;
+  const serviceName = document.getElementById('servicenameInput').value;
+  const macAddress = document.getElementById('macAddressInput').value;
+  const ipAddress = document.getElementById('ipAddressInput').value;
+  const netmask = document.getElementById('netmaskInput').value;
+  const broadcast = document.getElementById('broadcastInput').value;
+  const servicePort = document.getElementById('serviceportInput').value;
+  const ipv6Address = document.getElementById('ipv6addressInput').value;
+  const deviceType = document.getElementById('deviceTypeInput').value;
+  const status = document.getElementById('statusInput').value;
+  const softwareVersion = document.getElementById('softwareversionInput').value;
+  const httpPort = document.getElementById('httpportInput').value;
+  const deviceSerialNo = document.getElementById('deviceserialInput').value;
+
+  const newService = {
+    "Interface": interfaceValue,
+    "Service Name": serviceName,
+    "Mac Address": macAddress,
+    "IP Address": ipAddress,
+    "Netmask": netmask,
+    "Broadcast": broadcast,
+    "Service Port": servicePort,
+    "IPv6 Address": ipv6Address,
+    "Device Type": deviceType,
+    "Status": status,
+    "Software Version": softwareVersion,
+    "HTTP Port": httpPort,
+    "Device Trial No": deviceSerialNo,
+  };
+
+  // Rechercher l'indice de l'ancien service à partir de son adresse IP
+  const index = services.findIndex(service => service["Interface"] === interfaceValue);
+
+  if (index !== -1) {
+    // Remplacer l'ancien service par le nouveau service
+    services[index] = newService;
+  } else {
+    services.push(newService);
+  }
+
+  if (passwordInput === process.env.password) {
+    clearError();
+    // Mettre à jour l'affichage des services
+    displayServices();
+
+    // Envoyer les mises à jour au fichier client_services.json
+    updateClientServices(services);
+  } else if (passwordInput === '') {
+    // No password entered, display appropriate error message
+    showError('Please enter your password.');
+  } else {
+    // Incorrect password, display appropriate error message
+    showError('Incorrect password. Please try again.');
+  }
+}
+
+function showError(errorMessage) {
+  const errorContainer = document.getElementById('errorContainer');
+  errorContainer.textContent = errorMessage;
+  errorContainer.style.color = 'red';
+}
+
+function clearError() {
+  const errorContainer = document.getElementById('errorContainer');
+  errorContainer.textContent = '';  // Effacer le contenu du message d'erreur
+  errorContainer.style.color = '';   // Réinitialiser la couleur du texte
+}
+
+window.onload = function () {
+  loadServices(); // Charger les services au chargement de la page
+
+    const servicesElement = document.getElementById('services');
+
+    services.forEach((service) => {
+      const li = document.createElement('li');
+      li.textContent = service.name;
+      li.onclick = () => displayRubrique(service);
+      servicesElement.appendChild(li);
+    });
+
+    const sendButton = document.getElementById('sendButton');
+    sendButton.onclick = sendClicked;
+
+    const searchBar = document.getElementById('searchBar');
+    searchBar.addEventListener('input', () => {
+      const searchTerm = searchBar.value.trim();
+      if (searchTerm === '') {
+        loadServices(); // Call loadServices() to reset the filtering
+      } else {
+        showSuggestions();
+      }
+    });
+    searchBar.addEventListener('input', showSuggestions);
+    searchBar.addEventListener('keydown', handleSearchKeyPress);
+
+    const refreshButton = document.getElementById('refreshButton');
+    refreshButton.onclick = refreshWindow;
+
+    const changeIdModal = document.getElementById('changeIdModal');
+    const changePasswordModal = document.getElementById('changePasswordModal');
+    const closeButtons = document.querySelectorAll('.close');
+
+    closeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        changeIdModal.style.display = 'none';
+        changePasswordModal.style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', (event) => {
+      if (event.target === changeIdModal || event.target === changePasswordModal) {
+        changeIdModal.style.display = 'none';
+        changePasswordModal.style.display = 'none';
+      }
+    });
+}
+
+// Fonction pour refresh à travers un click sur la pancarte
+function refreshWindow() {
+  window.location.reload();
+}
+  </script>
+  </body>
+</html>
+
