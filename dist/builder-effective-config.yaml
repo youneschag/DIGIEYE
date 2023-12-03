@@ -1,0 +1,20 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - dist/**/*
+      - node_modules/**/*
+extraMetadata:
+  main: build/electron.js
+appId: digieye.myapp
+productName: DIGIEYE
+mac:
+  target: dmg
+win:
+  target: nsis
+linux:
+  target: AppImage
+extends: react-cra
+electronVersion: 15.5.7
