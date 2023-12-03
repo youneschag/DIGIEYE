@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion réussie</title>
+  <style>
+    body {
+      font-family: cursive, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+      
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #73c5f4;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+      
+    button:hover {
+        background-color: #555;
+    }
+    </style>
+</head>
+<body>
+  <h1>Vous êtes connecté avec succès !</h1>
+  <button id="ok-button">OK</button>
+  <script>
+    const okButton = document.getElementById('ok-button');
+    okButton.addEventListener('click', () => {
+      window.opener.location.href = '../public/index.html';
+      window.opener.postMessage("success", "*");
+      window.close();
+    });
+  </script>
+</body>
+</html>

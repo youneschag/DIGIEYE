@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+}
+    
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eeee;
+}
+    
+#main-holder {
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+}
+  
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+  
+#login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}
+  
+#error-msg-second-line {
+    display: block;
+}
+  
+#login-form {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 10px;
+}
+  
+.login-form-field::placeholder {
+    color: #3a3a3a;
+}
+  
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+  
+#login-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #73c5f4;
+    cursor: pointer;
+    outline: none;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+  
+#username-field {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+  
+#password-field {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+  
+#confirm-password-field {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+  
+#login-form-submit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#return-button {
+    width: 70px;
+    margin-right: 300px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #73c5f4;
+    cursor: pointer;
+    outline: none;
+}
+
+.ribbon-top {
+    background-color: #73c5f4;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+.ribbon-top:before {
+    top: 0;
+    left: 0;
+    border-width: 0 0 20px 20px; /* Ajuster la taille et la forme du ruban */
+}
+  
+.ribbon-top:after {
+    top: 0;
+    right: 0;
+    border-width: 0 20px 20px 0; /* Ajuster la taille et la forme du ruban */
+}
+  
+.ribbon-bottom {
+    background-color: #73c5f4; /* Couleur du ruban */
+    height: 20px; /* Hauteur du ruban */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+  
+.ribbon-bottom:before,
+.ribbon-bottom:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #f1f1f1 transparent transparent; /* Couleur du ruban */
+}

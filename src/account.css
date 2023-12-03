@@ -1,0 +1,88 @@
+html {
+    height: 100%;
+}
+    
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eeee;
+}
+    
+#main-holder {
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+}
+  
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #73c5f4;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+}
+  
+.ribbon-top {
+    background-color: #73c5f4;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+.ribbon-top:before {
+    top: 0;
+    left: 0;
+    border-width: 0 0 20px 20px; /* Ajuster la taille et la forme du ruban */
+}
+  
+.ribbon-top:after {
+    top: 0;
+    right: 0;
+    border-width: 0 20px 20px 0; /* Ajuster la taille et la forme du ruban */
+}
+  
+.ribbon-bottom {
+    background-color: #73c5f4; /* Couleur du ruban */
+    height: 20px; /* Hauteur du ruban */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+  
+.ribbon-bottom:before,
+  
+.ribbon-bottom:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #f1f1f1 transparent transparent; /* Couleur du ruban */
+}
